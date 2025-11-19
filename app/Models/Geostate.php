@@ -11,6 +11,7 @@ class Geostate extends Model
     use HasFactory;
 
     protected $fillable = [
+        'country_id',
         'geostate_name',
         'abbr'
     ];

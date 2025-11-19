@@ -24,6 +24,7 @@ class GeostateFactory extends Factory
         ]);
 
         return [
+            'country_id' => 'US',
             'geostate_name' => $state['name'],
             'abbr' => $state['abbr'],
         ];

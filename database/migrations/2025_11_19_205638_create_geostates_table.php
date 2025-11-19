@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('geostates', function (Blueprint $table) {
             $table->id();
+            $table->string('country_id', 2)->default('US');
             $table->string('geostate_name');
             $table->string('abbr', 2);
             $table->timestamps();

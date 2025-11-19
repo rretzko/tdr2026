@@ -80,6 +80,7 @@ class GeostateSeeder extends Seeder
             Geostate::create(
                 [
                     'id' => $seed[0],
+                    'country_id' => $seed[1],
                     'geostate_name' => $seed[2],
                     'abbr' => $seed[3],
                 ]
