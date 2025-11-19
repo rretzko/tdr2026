@@ -13,10 +13,17 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        //ALL environments
+        $this->call(GeostateSeeder::class);
+        $this->call(CountySeeder::class);
+
         //NEVER seed production
         if(config('app.env') !== 'production'){
             $this->call(UserSeeder::class);
+            $this->call(SchoolSeeder::class);
         }
+
+
 
     }
 }
