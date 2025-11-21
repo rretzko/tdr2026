@@ -18,6 +18,7 @@ class UserSeeder extends Seeder
             'name' => 'Rick Retzko',
             'email' => 'rick@mfrholdings.com',
             'password' => Hash::make('12345678'),
+            'email_verified_at' => now(),
         ]);
 
         User::factory(100)->create();

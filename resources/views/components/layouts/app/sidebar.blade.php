@@ -22,8 +22,12 @@
             <flux:spacer />
 
             <flux:navlist variant="outline">
+                <flux:navlist.item icon="bug-ant" href="" target="_blank">
+                {{ __('Report Bug') }}
+                </flux:navlist.item>
+
                 <flux:navlist.item icon="folder-git-2" href="https://github.com/laravel/livewire-starter-kit" target="_blank">
-                {{ __('Repository') }}
+                    {{ __('Repository') }}
                 </flux:navlist.item>
 
                 <flux:navlist.item icon="book-open-text" href="https://laravel.com/docs/starter-kits#livewire" target="_blank">
